@@ -25,6 +25,7 @@ class TestOne(BaseClass):
         self.driver.find_element_by_id("country").send_keys("ind")
         # time.sleep(5)
         self.verifyLinkPresence("India")
+        print("hello word")
 
         self.driver.find_element_by_link_text("India").click()
         self.driver.find_element_by_xpath("//div[@class='checkbox checkbox-primary']").click()
